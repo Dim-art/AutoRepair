@@ -1,0 +1,56 @@
+body {
+	font-family: 'Lato', sans-serif;
+  line-height: 23px;
+  color: #1a1a1a;
+  background-color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.b-page {
+  width: 1170px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*background*/
+.page-bg {
+  position: absolute;
+  z-index: -2
+  width: 100%;
+
+}
+
+/*header*/
+.b-header {
+  padding-top: 50px;
+}
+
+/*logo*/
+.b-header_logo {
+  background-color: #1A1A1A;
+  float: left;
+  text-align: center;
+
+}
+
+.b-logo_top {
+  font-size: 80px;
+  color: #FEDE00;
+  font-weight: bold;
+}
+
+.b-logo_bottom {
+  font-size: 65px;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+/*menu*/
