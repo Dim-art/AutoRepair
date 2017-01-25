@@ -8,6 +8,8 @@ body {
   margin: 0;
 }
 
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -15,42 +17,95 @@ a {
 
 .b-page {
   width: 1170px;
-  position: relative;
   margin: 0 auto;
+}
+
+.b-page_line__top {
+	padding-top: 60px;
 }
 
 /*background*/
 .page-bg {
   position: absolute;
-  z-index: -2
+  z-index: -5;
   width: 100%;
-
 }
 
 /*header*/
 .b-header {
-  padding-top: 50px;
+
+}
+
+.clearfix::after {
+	display: table;
+	content: "";
+	clear: both;
 }
 
 /*logo*/
 .b-header_logo {
-  background-color: #1A1A1A;
-  float: left;
-  text-align: center;
+	float: left;
+	background: #1A1A1A;
+
+}
+
+.b-logo {
+	width: 320px;
+	text-align: center;
+	height: 175px;
 
 }
 
 .b-logo_top {
-  font-size: 80px;
+	font-size: 70px;
   color: #FEDE00;
   font-weight: bold;
+	padding-top: 40px;
+	margin: 0 auto;
 }
 
 .b-logo_bottom {
-  font-size: 65px;
   color: #fff;
   font-weight: 300;
-  padding-top: 20px;
+	font-size: 55px;
+	padding-top: 40px;
+	margin: 0 auto;
 }
 
 /*menu*/
+.b-header_menu {
+	float: left;
+	background-color: #ffffff;
+}
+
+ {
+	background-color: #ECECEC;
+}
+
+.b-menu {
+	width: 100%;
+	height: 175px;
+	text-align: center;
+	display: table;
+}
+
+.b-link {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.b-link__menu {
+	width: 170px;
+	margin-right: 0;
+	display: table-cell;
+	padding-top: 75px;
+}
+
+.b-link__menu:hover,
+.b-link__menu__active {
+	background-color: #FEDE00;
+}
+
+.bgstyle-2 {
+	background-color: #ECECEC;
+}
