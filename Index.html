@@ -18,7 +18,7 @@
   <div class="b-page">
 
   <!-- header -->
-    <div class="b-page_line__top">
+    <div class="b-page_line__top clearfix">
       <div class="b-header">
         <div class="b-header_logo">
           <div class="b-logo">
@@ -39,48 +39,73 @@
     </div>
 
     <!-- line-1 -->
-    <div class="b-page_line">
+    <div class="b-page_line clearfix">
+
+      <!-- slider -->
       <div class="b-section b-slider">
-        <div class="b-slider_img">
-          <ul class="b-image">
-            <li class="b-image_item">
-              <img class="img" src="Img\slider1.jpg" alt="img-1">
+        <div class="b-slider_item">
+          <ul class="b-item">
+            <li class="b-item_img">
+              <img class="b-image" src="Img\slider1.jpg" alt="img-1">
             </li>
-            <li class="b-image_item">
-              <img class="img" src="Img\slider2.jpg" alt="img-2">
+            <li class="b-item_img">
+              <img class="b-image" src="Img\slider2.jpg" alt="img-2">
             </li>
-            <li class="b-image_item">
-              <img class="img" src="Img\slider3.jpg" alt="img-3">
+            <li class="b-item_img">
+              <img class="b-image" src="Img\slider3.jpg" alt="img-3">
             </li>
           </ul>
         </div>
-        <div class="b-slider_control"></div>
+        <div class="b-slider_control">
+          <div class="b-control-btn">
+            <div class="b-control-btn_left"></div>
+            <div class="b-control-btn_right"></div>
+          </div>
+        </div>
       </div>
+
+      <!-- poster+banner -->
       <div class="b-section">
-        <div class="b-section_poster"></div>
+        <div class="b-section_poster">
+          <div class="b-poster b-poster_top"></div>
+        </div>
         <div class="b-section_banner">
           <div class="b-banner">
-            <div class="b-banner_caption"></div>
-            <div class="b-banner_img"></div>
+            <div class="b-banner_caption">
+              <div class="b-caption">
+                <h2 class="b-caption_title__big">pro</h2>
+                <h2 class="b-caption_title__middle">solutions</h2>
+                <h3 class="b-caption_title__small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem unde, et illum.</h3>
+              </div>
+            </div>
+            <div class="b-banner_img">
+              <img src="Img\car-engine-1738309_640.jpg" height="295" width="50%" alt="engine-1">
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="b-page_line">
-      <div class="b-caption"></div>
+
+    <!-- line-2 -->
+    <div class="b-page_line clearfix">
+      <div class="b-info"></div>
       <div class="b-banner">
         <div class="b-banner_img"></div>
         <div class="b-banner_caption"></div>
       </div>
     </div>
-    <div class="b-page_line">
-      <div class="b-section b-caption"></div>
+
+    <!-- line-3 -->
+    <div class="b-page_line clearfix">
+      <div class="b-section b-info"></div>
       <div class="b-section">
         <div class="b-section_banner"></div>
         <div class="b-section_poster"></div>
       </div>
     </div>
-    <div class="b-page_line">
+
+    <!-- line-4 -->
+    <div class="b-page_line clearfix">
       <div class="b-thumbnail">
         <div class="b-thumbnail_col-1">
           <div class="b-col-1">
@@ -99,9 +124,11 @@
         <div class="b-thumbnail_map"></div>
       </div>
     </div>
+
+    <!-- footer -->
     <div class="b-page_footer">
       <div class="b-footer">
-        <div class="b-footer_caption"></div>
+        <div class="b-footer_info"></div>
         <div class="b-footer_icons"></div>
       </div>
     </div>
