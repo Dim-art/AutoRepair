@@ -29,7 +29,7 @@ a {
 }
 
 .b-section {
-	float: left;
+	float: none;
 	max-width: 50%;
 	height: 584px;
 	position: relative;
@@ -50,13 +50,27 @@ a {
 	clear: both;
 }
 
-@media all and ( min-width: 600px ) {
+@media screen and ( min-width: 600px ) {
 
 	.b-section {
 		float: left;
 		width: 50%;
 	}
 }
+
+@media screen and ( max-width: 1024px ) {
+
+	.b-header_menu {
+		width: 100%;
+	}
+
+	.b-header_logo {
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
 
 /*logo*/
 .b-header_logo {
@@ -69,7 +83,6 @@ a {
 	width: 320px;
 	text-align: center;
 	height: 175px;
-
 }
 
 .b-logo_top {
@@ -122,7 +135,32 @@ a {
 	background-color: #ECECEC;
 }
 
-/*line-1 slider*/
+/*banner-caption*/
+.b-caption {
+	padding: 10px ;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.b-caption_title__big {
+	font-size: 55px;
+	font-weight: 400;
+	margin: 30px 0;
+}
+
+.b-caption_title__middle {
+	font-size: 45px;
+	font-weight: 400;
+	margin: 30px 0;
+}
+
+.b-caption_title__small {
+	font-size: 13px;
+	font-weight: 400;
+	margin: 30px 0;
+}
+
+/*line-1 left section slider*/
 .b-slider {
     overflow: hidden;
     position: relative;
@@ -133,7 +171,6 @@ a {
     position: relative;
 		padding: 0;
 		margin: 0;
-
 }
 
 @-webkit-keyframes anim_slides {
@@ -153,6 +190,7 @@ a {
         opacity:0;
     }
 }
+
 @-moz-keyframes anim_slides {
     0% {
         opacity:0;
@@ -195,7 +233,7 @@ a {
     top: 0;
 
 
-    /* анимация css3 */
+    /* anim */
     -webkit-animation-name: anim_slides;
     -webkit-animation-duration: 18.0s;
     -webkit-animation-timing-function: linear;
@@ -215,7 +253,7 @@ a {
     -moz-animation-fill-mode: forwards;
 }
 
-/* show css3 */
+/* show */
 .b-item_img:nth-child(1) {
     -webkit-animation-delay: 6.0s;
     -moz-animation-delay: 6.0s;
@@ -230,6 +268,7 @@ a {
 }
 
 /*line-1 right-section*/
+/*poster*/
 .b-poster {
 	height: 292px;
 }
@@ -239,6 +278,7 @@ a {
 	background-position: 80% 85%;
 }
 
+/*banner*/
 .b-banner {
 	height: 292px;
 }
@@ -246,14 +286,4 @@ a {
 .b-banner_caption {
 	float: left;
 	width: 50%;
-}
-
-.b-caption {
-	margin: 0;
-	text-align: center;
-}
-
-.b-banner_img__top {
-	float: right;
-	background-image: url(Img/car-engine-1738309_640.jpg);
 }
