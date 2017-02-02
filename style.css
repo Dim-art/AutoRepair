@@ -135,8 +135,9 @@ a {
 	background-color: #ECECEC;
 }
 
-/*banner-caption*/
+/*caption*/
 .b-caption {
+	width: 50%;
 	padding: 10px ;
 	text-align: center;
 	padding-top: 20px;
