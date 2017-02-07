@@ -66,7 +66,6 @@ a {
 /*info*/
 .b-info {
 	text-align: center;
-
 	height: 292px;
 	padding: 30px 20px 0;
 }
@@ -312,11 +311,11 @@ a {
 .b-img__line-1 {
 	background-image:  url(Img/car-engine-1044236_640.jpg);
 	background-position: 37% 6%;
-
+	background-size: cover;
 }
 
 /*line-2 left-section*/
-.b-info__line-2 {
+.b-info__line-2-left {
 	background: #FEDE00;
 }
 
@@ -324,16 +323,44 @@ a {
 .b-img__line-2 {
 	background-image: url(Img/car-engine-1738309_640.jpg);
 	background-position: 45% 45%;
+	background-size: cover;
+}
 
+.b-info__line-2-right {
+	background-color: black;
+}
+
+.f-color-2 {
+	color: #FEDE00;
+}
+
+.f-color-3 {
+	color: white;
 }
 
 /*line-3 left-section*/
-.b-info__line-3 {
+.b-info__line-3-left {
 	height: 584px;
 }
+
+.b-info_btn {
+	width: 180px;
+	height: 65px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 18px;
+	background-color: black;
+	border: none;
+}
+
 /*line-3 right-section*/
+.b-info__line-3-right {
+	background-color: #FEDE00;
+}
+
 .b-img__line-3 {
 	background-image: url(Img/interier.jpg);
+	background-size: cover;
 }
 
 .b-poster__line-3 {
@@ -341,4 +368,39 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 25%;
+}
+
+/*line-4 left-section*/
+.b-img__line-4 {
+	width: 50%;
+	float: left;
+	background-image: url(Img/volkswagen-1509784_640.jpg);
+	background-size: cover;
+}
+
+.b-recall {
+	float: left;
+	width: 50%;
+	height: 584px;
+	background-color: #FEDE00;
+	text-align: center;
+}
+
+.b-recall_title {
+	font-size: 25px;
+}
+
+.b-recall_img {
+	width: 150px;
+	height: 150px;
+	border-radius: 200px;
+	background-image: url(Img/mechanic-1106773_640.jpg);
+	background-size: cover;
+	background-position: 40%
+}
+
+.b-navbar {
+	width: 50%;
+	height: 876px;
+	float: left;
 }
