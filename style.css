@@ -389,7 +389,9 @@ a {
 }
 
 .b-recall_title {
-	font-size: 25px;
+	font-size: 30px;
+	font-weight: 500;
+	padding: 20px 0 40px;
 }
 
 .b-recall_img {
@@ -400,6 +402,16 @@ a {
 	background-size: cover;
 	background-position: 40%;
 	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.b-recall_text-1 {
+	font-size: 12px;
+	padding: 20px 0 30px;
+}
+
+.b-recall_text-2 {
+	font-weight: 700;
 }
 
 .b-navbar {
@@ -422,7 +434,7 @@ a {
 	padding: 11px;
 	line-height: 25px;
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #fff;
 	display: block;
 }
