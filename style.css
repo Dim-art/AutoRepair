@@ -19,6 +19,7 @@ a {
   color: inherit;
 }
 
+
 /*-------grid-------*/
 .b-page {
   width: 1170px;
@@ -373,17 +374,18 @@ a {
 /*line-4 left-section*/
 .b-img__line-4 {
 	width: 50%;
-	float: left;
+	float: right;
 	background-image: url(Img/volkswagen-1509784_640.jpg);
 	background-size: cover;
 }
 
 .b-recall {
-	float: left;
 	width: 50%;
 	height: 584px;
 	background-color: #FEDE00;
 	text-align: center;
+	padding: 20px;
+	float: right;
 }
 
 .b-recall_title {
@@ -396,11 +398,31 @@ a {
 	border-radius: 200px;
 	background-image: url(Img/mechanic-1106773_640.jpg);
 	background-size: cover;
-	background-position: 40%
+	background-position: 40%;
+	margin: 0 auto;
 }
 
 .b-navbar {
 	width: 50%;
 	height: 876px;
-	float: left;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+.b-navbar_item {
+	list-style-type: none;
+	height: 73px;
+	background-color: black;
+	border-top: 1px solid #313131;
+	text-align: center;
+}
+
+.b-navbar_link {
+	padding: 11px;
+	line-height: 25px;
+	font-size: 21px;
+	font-weight: 700;
+	color: #fff;
+	display: block;
 }
