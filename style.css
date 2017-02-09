@@ -19,6 +19,10 @@ a {
   color: inherit;
 }
 
+li {
+	list-style-type: none;
+}
+
 
 /*-------grid-------*/
 .b-page {
@@ -424,7 +428,6 @@ a {
 }
 
 .b-navbar_item {
-	list-style-type: none;
 	height: 73px;
 	background-color: black;
 	border-top: 1px solid #313131;
@@ -447,9 +450,86 @@ a {
 
 .b-map {
 	position: relative;
+	display: block;
+}
+
+.b-map_map {
+	display: block;
 }
 
 .b-map_caption {
 	position: absolute;
+	top: 0;
+	right: 0;
 	width: 50%;
+	height: 100%;
+	background-color: #FEDE00;
+	opacity: 0.8;
+
+}
+
+.b-caption {
+	padding: 20px;
+	text-align: center;
+}
+
+.b-caption_text {
+	font-size: 13px;
+}
+
+.b-caption_phone {
+	font-size: 24px;
+	font-weight: 700;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 1.2;
+}
+
+/*footer*/
+.b-footer {
+	width: 100%;
+	height: 60px;
+}
+
+.b-footer_info {
+	float: left;
+	vertical-align: middle;
+	display: inline;
+	padding-left: 30px;
+	color: #313131;
+}
+
+.b-footer_social {
+	margin: 0;
+	padding: 0;
+}
+
+.b-social {
+	float: right;
+
+}
+
+.b-social_inner {
+	margin: 0;
+	padding: 0;
+}
+
+.b-social_icon {
+	float: left;
+	text-align: left;
+}
+
+.fa {
+	width: 70px;
+	height: 60px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.fa-facebook {
+	background-color: #FEDE00;
+}
+.fa-twitter {
+	background-color: black;
+	color: #FEDE00;
 }
