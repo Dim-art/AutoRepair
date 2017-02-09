@@ -377,6 +377,7 @@ a {
 	float: right;
 	background-image: url(Img/volkswagen-1509784_640.jpg);
 	background-size: cover;
+	background-position: 30%;
 }
 
 .b-recall {
@@ -437,4 +438,18 @@ a {
 	font-weight: 500;
 	color: #fff;
 	display: block;
+}
+
+/*line-4 right-section*/
+.b-info__line-4-right {
+	height: 584px;
+}
+
+.b-map {
+	position: relative;
+}
+
+.b-map_caption {
+	position: absolute;
+	width: 50%;
 }
