@@ -1,4 +1,4 @@
-s  body {
+body {
 	font-family: 'Lato', sans-serif;
   line-height: 23px;
   color: #1a1a1a;
@@ -136,10 +136,11 @@ li {
 
 		.b-page {
 		width: 768px;
+		margin: 1px;
 		}
 
 		.b-menu {
-
+		width: 50%;
 		}
 
 		.b-header_logo {
@@ -334,7 +335,7 @@ li {
 .b-poster__line-1 {
 	background-image: url(Img/service.jpg);
 	background-position: 80% 85%;
-
+	background-size: cover;
 }
 
 .b-img__line-1 {
@@ -385,7 +386,8 @@ li {
 .b-info_btn:hover {
 	background-color: #FEDE00;
 	transform: scale(1.1,1.1);
-	transition: background-color 2s linear, color 3s 1s linear;
+	transition: background-color 0.4s linear, color 0.3s linear;
+	color: black;
 }
 
 /*line-3 right-section*/
