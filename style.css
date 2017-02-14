@@ -1,4 +1,5 @@
-body {
+
+	body {
 	font-family: 'Lato', sans-serif;
   line-height: 23px;
   color: #1a1a1a;
@@ -14,7 +15,7 @@ a {
 }
 
 a:hover {
-	transition: color 1s linear;
+	transition: color 0.3s linear;
 	color: black;
 }
 
@@ -52,9 +53,7 @@ li {
 }
 
 .b-poster:hover {
-	background-color: #FEDE00;
-	transform: scaleY(1.1,1.1);
-
+	transform: scale(1.1,1.1);
 }
 
 /*banner*/
@@ -84,6 +83,7 @@ li {
 	text-align: center;
 	height: 292px;
 	padding: 30px 20px 0;
+
 }
 
 /*info-title*/
@@ -169,8 +169,8 @@ li {
 .b-header_logo {
 	float: left;
 	background: #1A1A1A;
-
 }
+
 
 .b-logo {
 	width: 320px;
@@ -210,6 +210,10 @@ li {
 .b-link {
 	font-weight: 600;
 	font-size: 20px;
+}
+
+.b-link:hover {
+	background-color: #FEDE00;
 }
 
 .b-link__menu {
@@ -365,18 +369,19 @@ li {
 }
 
 .f-color-3 {
-	color: white;
+	color: #fff;
 }
 
 /*line-3 left-section*/
 .b-info__line-3-left {
+	background-color: #fff;
 	height: 584px;
 }
 
 .b-info_btn {
 	width: 180px;
 	height: 65px;
-	color: white;
+	color: #fff;
 	text-transform: uppercase;
 	font-size: 18px;
 	background-color: black;
@@ -466,6 +471,11 @@ li {
 	text-align: center;
 }
 
+.b-navbar_item:hover {
+	background-color: #FEDE00;
+	transition: background-color 0.4s linear, color 0.3s linear;
+}
+
 .b-navbar_link {
 	padding: 11px;
 	line-height: 25px;
@@ -475,9 +485,11 @@ li {
 	display: block;
 }
 
+
 /*line-4 right-section*/
 .b-info__line-4-right {
 	height: 584px;
+	background-color: #fff;
 }
 
 .b-map {
