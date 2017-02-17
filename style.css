@@ -186,15 +186,15 @@ li {
 
 .b-logo_top {
 	font-size: 70px;
-  color: #FEDE00;
-  font-weight: bold;
+  	color: #FEDE00;
+  	font-weight: bold;
 	padding-top: 40px;
 	margin: 0 auto;
 }
 
 .b-logo_bottom {
-  color: #fff;
-  font-weight: 300;
+  	color: #fff;
+  	font-weight: 300;
 	font-size: 55px;
 	padding-top: 40px;
 	margin: 0 auto;
@@ -213,23 +213,27 @@ li {
 	width: 100%;
 }
 
-.b-link {
+.b-menu_link {
 	font-weight: 600;
 	font-size: 20px;
 }
 
-.b-link:hover {
+.b-menu_link:hover {
 	background-color: #FEDE00;
 }
 
-.b-link__menu {
+.b-menu_link {
 	width: 170px;
 	margin-right: 0;
 	display: table-cell;
 	padding-top: 75px;
 }
 
-.bg-style-2 {
+.b-menu_link__style-2 {
+	background-color: #fff;
+}
+
+.b-menu_link__style-1 {
 	background-color: #ECECEC;
 }
 
@@ -238,13 +242,13 @@ li {
 .b-slider {
 		width: 100%;
 		overflow: hidden;
-    position: relative;
+    	position: relative;
 		height: 584px;
 		float: left;
 }
 .b-item {
-    list-style: none;
-    position: relative;
+    	list-style: none;
+    	position: relative;
 		padding: 0;
 		margin: 0;
 }
@@ -348,7 +352,7 @@ li {
 	background-size: cover;
 }
 
-.b-banner_info__line-1-right {
+.b-banner_info__line-1 {
 	background-color: #fff;
 }
 
@@ -374,11 +378,11 @@ li {
 	background-color: #1A1A1A;
 }
 
-.f-color-2 {
+.b-info_title__color-1 {
 	color: #FEDE00;
 }
 
-.f-color-3 {
+.b-info_title__color-2 {
 	color: #fff;
 }
 
@@ -527,7 +531,8 @@ li {
 	text-align: center;
 }
 
-.b-caption_text {
+.b-caption_address,
+.b-caption_shedule {
 	font-size: 13px;
 }
 
