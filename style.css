@@ -253,6 +253,24 @@ li {
 		margin: 0;
 }
 
+@keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    8% {
+        opacity:1;
+    }
+    27% {
+        opacity:1;
+    }
+    52% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
 @-webkit-keyframes anim_slides {
     0% {
         opacity:0;
@@ -314,6 +332,15 @@ li {
 
 
     /* anim */
+	animation-name: anim_slides;
+    animation-duration: 18.0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+
     -webkit-animation-name: anim_slides;
     -webkit-animation-duration: 18.0s;
     -webkit-animation-timing-function: linear;
