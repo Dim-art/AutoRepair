@@ -1,244 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width maximum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AutoRepair</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Template</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+  </head>
+  <body>
 
-  <!-- header -->
-  <div class="b-header">
-        <div class="b-header_logo">
-          <div class="b-logo">
-            <div class="b-logo_top"><a href="#">car</a></div>
-            <div class="b-logo_bottom">repair</div>
-          </div>
-        </div>
-        <div class="b-header_menu">
-          <div class="b-menu">
-            <div class="b-menu_item b-menu_item__style-1">home<a href="#" class="b-menu_link"></a></div>
-            <div class="b-menu_item b-menu_item__style-2">services<a href="#" class="b-menu_link"></a></div>
-            <div class="b-menu_item b-menu_item__style-1">prices<a href="#" class="b-menu_link"></a></div>
-            <div class="b-menu_item b-menu_item__style-2">news<a href="#" class="b-menu_link"></a></div>
-            <div class="b-menu_item b-menu_item__style-1">contacts<a href="#" class="b-menu_link"></a></div>
-          </div>
-        </div>
-      </div>
+   <div class="b-page">
 
-  <!-- content -->
-  <div class="b-page">
+      <!--header-->
+     <header class="b-page__header">
 
-    <!-- line-1 -->
-    <div class="b-page_line clearfix">
+       <!--logo-->
+       <div class="b-logo">
+         <ul class="b-logo__items">
+           <li class="b-logo__item b-logo__item--top">car</li>       <li class="b-logo__item b-logo__item--bottom">repair</li>
+         </ul>
+       </div>
+       <!--navbar-->
+       <nav class="b-nav">
 
-      <!-- line-1 left-section -->
+        <!--menu-->
+         <button id="b-nav__toggle" class="b-nav__toggle">menu</button>
+         <ul id="b-nav__items" class="b-nav__items">
+           <li class="b-nav__item b-nav__item--style-1"><a href="#" class="b-nav__link">home</a></li>
+           <li class="b-nav__item b-nav__item--style-2"><a href="#" class="b-nav__link">services</a></li>
+           <li class="b-nav__item b-nav__item--style-1"><a href="#" class="b-nav__link">prices</a></li>
+           <li class="b-nav__item b-nav__item--style-2"><a href="#" class="b-nav__link">news</a></li>
+           <li class="b-nav__item b-nav__item--style-1"><a href="#" class="b-nav__link">contacts</a></li>
+         </ul>
+         <script>
+          (function() {
+            var toggle = document.querySelector("#b-nav__toggle");
+            var nav = document.querySelector("#b-nav__items");
+            toggle.addEventListener("click", function(e) {
+              e.preventDefault();
+              nav.classList.contains("b-nav__items--visible") ? nav.classList.remove("b-nav__items--visible") : nav.classList.add("b-nav__items--visible");
+            });
+          })();
+         </script>
+       </nav>
+     </header>
 
-      <div class="b-section">
-        <!--slider-->
-        <div class="b-slider">
-            <div class="b-slider_item">
-              <ul class="b-item">
-                <li class="b-item_img">
-                  <img class="b-image" src="Img\slider1.jpg" alt="img-1">
-                </li>
-                <li class="b-item_img">
-                  <img class="b-image" src="Img\slider2.jpg" alt="img-2">
-                </li>
-                <li class="b-item_img">
-                  <img class="b-image" src="Img\slider3.jpg" alt="img-3">
-                </li>
-              </ul>
-            </div>
-        </div>
-      </div>
+     <!--content-->
+     <main class="b-page__body">
+       <div class="b-page__row b-page__row--md">
+         <div class="b-page__item">1</div>
+         <div class="b-page__item">2</div>
+       </div>
+       <div class="b-page__row b-page__row--md">
+         <div class="b-page__item">2</div>
+         <div class="b-page__item">3</div>
+       </div>
+       <div class="b-page__row b-page__row--md">
+         <div class="b-page__item">4</div>
+         <div class="b-page__item">5</div>
+       </div>
+       <div class="b-page__row b-page__row--md">
+         <div class="b-page__item">6</div>
+         <div class="b-page__item">7</div>
+       </div>
+     </main>
 
-      <!-- line-1 right-section -->
-      <div class="b-section">
-
-        <!-- poster -->
-        <div class="b-section_poster">
-          <div class="b-poster b-poster__line-1"></div>
-        </div>
-
-        <!-- banner -->
-        <div class="b-section_banner">
-          <div class="b-banner">
-            <div class="b-banner_info b-banner_info__line-1">
-              <div class="b-info">
-                <div class="b-info_title b-info_title__big">pro</div>
-                <div class="b-info_title b-info_title__middle">solutions</div>
-                <div class="b-info_title b-info_title__small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-              </div>
-            </div>
-            <div class="b-banner_img">
-              <div class="b-img b-img__line-1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- line-2 -->
-    <div class="b-page_line clearfix">
-
-      <!-- line-2 left-section -->
-      <!-- info -->
-      <div class="b-section">
-        <div class="b-info b-info__line-2-left">
-          <h1 class="b-info_title b-info_title__middle">complete</h1>
-          <h1 class="b-info_title b-info_title__big">auto service</h1>
-          <h1 class="b-info_title b-info_title__small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus atque tempora itaque voluptas vitae! Quisquam, quam, pariatur animi ea, labore quidem.</h1>
-        </div>
-      </div>
-
-      <!-- line-2 right-section -->
-
-      <div class="b-section">
-          <!--banner-->
-          <div class="b-banner">
-            <div class="b-banner_img">
-              <div class="b-img b-img__line-2"></div>
-            </div>
-            <div class="b-banner_info">
-              <div class="b-info b-info__line-2-right">
-                <h1 class="b-info_title b-info_title__big b-info_title__color-1">best</h1>
-                <h1 class="b-info_title b-info_title__middle b-info_title__color-1">services</h1>
-                <h1 class="b-info_title b-info_title__small b-info_title__color-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem unde, et illum.</h1>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- line-3 -->
-    <div class="b-page_line clearfix">
-
-      <!-- line-3 left-section -->
-      <!-- info -->
-      <div class="b-section">
-        <div class="b-info b-info__line-3-left">
-          <h1 class="b-info_title b-info_title__middle">pro</h1>
-          <h1 class="b-info_title b-info_title__big">solutions</h1>
-          <h1 class="b-info_title b-info_title__mid-low">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-          <h1 class="b-info_title b-info_title__small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat reprehenderit soluta ad, accusamus molestiae nobis facilis repellendus totam. Animi quaerat provident quae, voluptatibus porro voluptatem amet nihil unde. Enim, assumenda?</h1>
-          <button class="b-info_btn">
-            <a href="#" class="btn">read more</a>
-          </button>
-        </div>
-      </div>
-
-      <!-- line-3 right-section -->
-      <div class="b-section">
-
-        <!-- banner -->
-          <div class="b-section_banner">
-            <div class="b-banner">
-              <div class="b-banner_info">
-                <div class="b-info b-info__line-3-right">
-                  <h1 class="b-info_title b-info_title__big">our</h1>
-                  <h1 class="b-info_title b-info_title__middle">prices</h1>
-                  <h1 class="b-info_title b-info_title__small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem unde, et illum.</h1>
-                </div>
-
-              </div>
-              <div class="b-banner_img">
-                <div class="b-img b-img__line-3"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- poster -->
-          <div class="b-section_poster">
-            <div class="b-poster b-poster__line-3"></div>
-          </div>
-      </div>
-    </div>
-
-    <!-- line-4 -->
-    <div class="b-page_line clearfix">
-
-      <!-- line-4 left-section -->
-      <div class="b-section">
-        <div class="b-section_navbar">
-          <ul class="b-navbar">
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">complete computer diagnostics</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">complete safety analysis</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">drivability problems</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">brake repair specialists</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">mufflers and exhaust systems</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">steering and suspensions</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">fuel system services</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">coolant system</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">emission repair facility</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">air conditioning service</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">electrical systems</a></li>
-            <li class="b-navbar_item"><a class="b-navbar_link" href="#">fleet maintenance</li>
-          </a></ul>
-        </div>
-        <div class="b-section_img">
-          <div class="b-img b-img__line-4"></div>
-        </div>
-        <div class="b-section_recall">
-          <div class="b-recall">
-            <div class="b-recall_title">testimonials</div>
-            <div class="b-recall_img"></div>
-            <div class="b-recall_icon">
-              <i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
-            </div>
-            <div class="b-recall_text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat exercitationem quas suscipit fugit, tempore itaque nisi laborum aperiam </div>
-            <div class="b-recall_text-2">lorem ipsum dolor sit</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- line-4 right-section -->
-      <div class="b-section">
-
-        <!-- info -->
-        <div class="b-info b-info__line-4-right">
-          <h1 class="b-info_title b-info_title__middle">pro</h1>
-          <h1 class="b-info_title b-info_title__big">solutions</h1>
-          <h1 class="b-info_title b-info_title__mid-low">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-          <h1 class="b-info_title b-info_title__small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat reprehenderit soluta ad, accusamus molestiae nobis facilis repellendus totam. Animi quaerat provident quae, voluptatibus porro voluptatem amet nihil unde. Enim, assumenda?</h1>
-          <button class="b-info_btn">
-            <a href="#" class="btn">read more</a>
-          </button>
-        </div>
-
-        <!-- map -->
-        <div class="b-map">
-          <iframe class="b-map_map" src="https://api-maps.yandex.ru/frame/v1/-/CZhPZS21" width="100%" height="292" frameborder="0"></iframe>
-          <div class="b-map_caption">
-            <div class="b-caption">
-              <p class="b-caption_address">address: 4578 marmora road, glasgow d04 89gr</p>
-              <p class="b-caption_phone">(800)2345-6789 (800) 2345-6789</p>
-              <p class="b-caption_shedule">monday - friday: 7:30 am - 6:00 pm saturday 7:30 am - noon <br> night drop available</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- footer -->
-  <div class="b-page_footer">
-    <div class="b-footer">
-      <p class="b-footer_info">car repair © 2017. privacy policy</p>
-      <div class="b-footer_social">
-        <div class="b-social">
-          <ul class="b-social_inner">
-              <li class="b-social_icon"><a href="#" class="fa fa-facebook fa-3x"></a></li>
-              <li class="b-social_icon"><a href="#" class="fa fa-twitter fa-3x"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+     <!--footer-->
+     <footer class="b-page__footer"></footer>
+   </div>
+  </body>
 </html>
