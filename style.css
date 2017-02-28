@@ -21,6 +21,13 @@ a {
 	color: inherit;
 }
 
+h1,
+h2,
+h3 {
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
 
 
 /*grid*/
@@ -66,6 +73,77 @@ a {
   }
 
 }
+
+/*-----blocks------*/
+
+/*poster*/
+.b-poster {
+	width: 100%;
+	height: 292px;
+}
+
+.b-poster:hover {
+	background-color: #FEDE00;
+	transform: scaleY(1.1,1.1);
+}
+
+/*banner*/
+.b-banner {
+	width: 100%;
+	height: 292px;
+	display: flex;
+}
+
+.b-banner__info {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.b-banner__img {
+	width: 50%;
+}
+
+/*image*/
+.b-img {
+	width: 100%;
+	height: 292px;
+
+}
+
+/*info*/
+.b-info {
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 10%;
+}
+
+/*info-title*/
+.b-info__title--big {
+	font-size: 3em;
+	font-weight: 400;
+		
+}
+
+.b-info__title--middle {
+	font-size: 2.5em;
+	font-weight: 400;
+	
+}
+
+.b-info__title--mid-low {
+	font-size: 1.2em;
+	font-weight: 400;
+	
+}
+
+.b-info__title--small {
+	font-size: 0.8em;
+	font-weight: 400;
+	
+}
+
 
 /*-----content-----*/
 
@@ -146,7 +224,7 @@ a {
 	margin: 0 0 4px 0;
 	padding: 4px;
 	color: #fff;
-	background-color: #inherit;
+	background-color: inherit;
 	border: 0;
 }
 
@@ -185,7 +263,9 @@ a {
 
 }
 
-/*line-1*/
+/*--line-1_left-section--*/
+
+/*slider*/
 .b-slider {
 	width: 100%;
 	overflow: hidden;
@@ -273,7 +353,7 @@ a {
     }
 }
 
-.b-item_img {
+.b-item__img {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -309,15 +389,99 @@ a {
 }
 
 /* show */
-.b-item_img:nth-child(1) {
+.b-item__img:nth-child(1) {
 		animation-delay: 6.0s;
     -webkit-animation-delay: 6.0s;
     -moz-animation-delay: 6.0s;
 }
-.b-item_img:nth-child(2) {
+.b-item__img:nth-child(2) {
 		animation-delay: 12.0s;
     -webkit-animation-delay: 12.0s;
     -moz-animation-delay: 12.0s;
 }
 
 
+/*--line-1_right-section--*/
+.b-poster--line-1 {
+	background-image: url(Img/service.jpg);
+	background-position: 80% 85%;
+	background-size: cover;
+}
+
+.b-banner__info--line-1 {
+	background-color: #fff;
+}
+
+.b-img--line-1 {
+	background-image:  url(Img/car-engine-1044236_640.jpg);
+	background-position: 37% 6%;
+	background-size: cover;
+}
+
+/*--line-2_left-section--*/
+.b-page__item--bg-color {
+	background-color: #FEDE00;
+}
+
+/*--line-2_right-section--*/
+.b-img--line-2 {
+	background-image: url(Img/car-engine-1738309_640.jpg);
+	background-position: 45% 45%;
+	background-size: cover;
+}
+
+.b-banner__info--line-2 {
+	background-color: #1A1A1A;
+}
+
+.b-info__title--color-1 {
+	color: #FEDE00;
+}
+
+.b-info__title--color-2 {
+	color: #fff;
+}
+
+
+/*--line-3_left-section--*/
+.b-info--line-3-left {
+	background-color: #fff;
+	height: 584px;
+}
+
+.b-info__btn {
+	width: 180px;
+	height: 65px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	background-color: #1A1A1A;
+	border: none;
+}
+
+.b-info__btn:hover {
+	background-color: #FEDE00;
+	transform: scale(1.1,1.1);
+	transition: background-color 0.4s linear, color 0.3s linear;
+	color: #1A1A1A;
+}
+
+/*--line-3_right-section--*/
+.b-info--line-3-right {
+	background-color: #FEDE00;
+}
+
+.b-img--line-3 {
+	background-image: url(Img/interier.jpg);
+	background-size: cover;
+}
+
+.b-poster--line-3 {
+	background-image: url(Img/profile.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 25%;
+}
+
+/*--line-4_left-section--*/
+/*--line-4_right-section--*/
