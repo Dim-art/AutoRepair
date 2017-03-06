@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+          (function() {
+            var toggle = document.querySelector("#b-nav__toggle");
+            var nav = document.querySelector("#b-nav__items");
+            toggle.addEventListener("click", function(e) {
+              e.preventDefault();
+              nav.classList.contains("b-nav__items--visible") ? nav.classList.remove("b-nav__items--visible") : nav.classList.add("b-nav__items--visible");
+            });
+          })();
+    </script>
   </head>
   <body>
     
@@ -38,16 +48,6 @@
            <li class="b-nav__item b-nav__item--style-1"><a href="#" class="b-nav__link">contacts</a></li>
          </ul>
 
-         <script>
-          (function() {
-            var toggle = document.querySelector("#b-nav__toggle");
-            var nav = document.querySelector("#b-nav__items");
-            toggle.addEventListener("click", function(e) {
-              e.preventDefault();
-              nav.classList.contains("b-nav__items--visible") ? nav.classList.remove("b-nav__items--visible") : nav.classList.add("b-nav__items--visible");
-            });
-          })();
-         </script>
          
        </nav>
      </header>
@@ -56,7 +56,7 @@
      <main class="b-page__body">
 
        <!--line-1-->
-       <div class="b-page__row">
+       <div class="b-page__row b-page__row--m">
 
          <!--left-section-->
          <div class="b-page__item">
@@ -105,7 +105,7 @@
        </div>
 
        <!--line-2-->
-       <div class="b-page__row">
+       <div class="b-page__row b-page__row--s">
          
          <!--left-section-->
          <div class="b-page__item b-page__item--bg-color">
@@ -141,7 +141,7 @@
        </div>
        
        <!--line-3-->
-       <div class="b-page__row">
+       <div class="b-page__row b-page__row--m">
          
          <!--left-section-->
          <div class="b-page__item">
@@ -188,7 +188,7 @@
        </div>
        
        <!--line-4-->
-       <div class="b-page__row">
+       <div class="b-page__row b-page__row--l">
          
          <!--left-section-->
          <div class="b-page__item b-page__item--vert">
