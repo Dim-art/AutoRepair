@@ -114,9 +114,7 @@ h3 {
     align-items: stretch;  
 }
 
-
 @media all and ( min-width: 768px ) and ( max-width: 959px ) {
-
 }
 
 @media all and ( max-width: 767px ) {
@@ -205,6 +203,13 @@ h3 {
 	font-size: 18px;
 	background-color: #1A1A1A;
 	border: none;
+}
+
+.b-info__btn:hover {
+	background-color: #FEDE00;
+	transform: scale(1.1,1.1);
+	transition: background-color 0.4s linear, color 0.3s linear;
+	color: #1A1A1A;
 }
 /*___________________________________*/
 
@@ -328,7 +333,6 @@ h3 {
     height: 100%;
 	overflow: hidden;
 	position: relative;
-	
 }
 
 .b-item {
@@ -499,13 +503,6 @@ h3 {
 
 /*--line-3_left-section--*/
 
-.b-info__btn:hover {
-	background-color: #FEDE00;
-	transform: scale(1.1,1.1);
-	transition: background-color 0.4s linear, color 0.3s linear;
-	color: #1A1A1A;
-}
-
 /*--line-3_right-section--*/
 .b-banner__info--line-3 {
 	background-color: #FEDE00;
@@ -602,7 +599,6 @@ h3 {
 
 .b-navbar__link {
     color: #fff;
-    text-align: center;
 }
 
 /*--line-4_right-section--*/
