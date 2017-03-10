@@ -67,17 +67,6 @@ h3 {
 	flex-direction: row;
 }
 
-@media all and ( max-width: 768px ) {
-    .b-page__header {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.b-page__header {
-    height: 175px;
-}
-
 .b-page__footer {
     height: 60px;
     background-color: #fff;
@@ -114,18 +103,21 @@ h3 {
     align-items: stretch;  
 }
 
-@media all and ( min-width: 768px ) and ( max-width: 959px ) {
-}
 
 @media all and ( max-width: 767px ) {
 	
 	.b-page {
-		width: 100%;
+		width: 98%;
 		}
 
 	.b-page__row {
 		flex-direction: column;
 		}
+    
+    .b-page__header {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 /*_________________________________________*/
@@ -165,33 +157,77 @@ h3 {
     flex: 1;
 	display: flex;
     flex-direction: column;
-    align-items: center;   
-    justify-content: center; 
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px; 
 }
 
 /*info-title*/
+/*.b-info__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}*/
+
 .b-info__title--big {
-	font-size: 3em;
+	font-size: 50px;
 	font-weight: 400;
-	
+	line-height: 60px;
 }
 
 .b-info__title--middle {
-	font-size: 2.5em;
+	font-size: 40px;
 	font-weight: 400;
-	
+	line-height: 50px;
 }
 
 .b-info__title--mid-low {
-	font-size: 1.2em;
+	font-size: 20px;
 	font-weight: 400;
-	
+	line-height: 23px;
 }
 
 .b-info__title--small {
-	font-size: 0.8em;
+	font-size: 14px;
 	font-weight: 400;
-	
+	line-height: 23px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+@media all and ( min-width: 768px ) and ( max-width: 959px ) {
+
+    .b-info__title {
+        line-height: 29px;
+    }
+
+    .b-info__title--big {
+        font-size: 25px;        
+    }
+
+    .b-info__title--middle {
+        font-size: 23px;
+    }
+
+    .b-info__title--mid-low {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .b-info__title--small {
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
+
+@media all and ( max-width: 767px ) {
+    
+    .b-banner {
+        flex-direction: column; 
+        height: 584px;
+    }
+
+
 }
 
 /*button*/
@@ -525,6 +561,14 @@ h3 {
     flex-direction: row;
 }
 
+@media all and ( max-width: 767px ) {
+
+    .b-page__item--vert {
+        flex-direction: column;
+    }
+
+}
+
 .b-recall {
     flex: 1;
     display: flex;
@@ -590,6 +634,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .b-navbar__item:hover {
@@ -599,6 +645,8 @@ h3 {
 
 .b-navbar__link {
     color: #fff;
+    text-align: center; 
+    line-height: 20px;
 }
 
 /*--line-4_right-section--*/
