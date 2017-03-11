@@ -69,7 +69,7 @@ h3 {
 }
 
 .b-page__footer {
-    height: 60px;
+    height: 100%;
     background-color: #fff;
 }
 
@@ -109,12 +109,17 @@ h3 {
 	
 	.b-page {
 		width: 98%;
-		}
+	}
 
 	.b-page__row {
+        height: 100%;
 		flex-direction: column;
-		}
-    
+	}
+
+    .b-page__item--vert {
+        height: 1460px;
+    }
+
     .b-page__header {
         display: flex;
         flex-direction: column;
@@ -159,9 +164,9 @@ h3 {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    justify-content: center;
+    padding-right: 10px;
     padding-left: 10px;
-    padding-right: 10px; 
 }
 
 /*info-title*/
@@ -251,6 +256,7 @@ h3 {
 
 .b-recall__icon {
     flex: 1;
+    padding-top: 10px;
 }
 
 .b-recall__text {
@@ -297,7 +303,7 @@ h3 {
 
 /*maps caption*/
 .b-caption {
-	padding: 20px;
+	padding: 0 10px;
 	text-align: center;
 }
 
@@ -314,10 +320,18 @@ h3 {
 	line-height: 1.2;
 }
 
+@media all and ( max-width: 767px ) {
+    
+    .b-banner__info {
+        flex: 2;
+    }
+
+}
+
 /*____________________________________________*/
 
 
-/*font size*/
+/*font size & paddings*/
 @media all and ( min-width: 481px ) and ( max-width: 959px ) {
 
     .b-info__title {
@@ -422,7 +436,7 @@ h3 {
     }
 
     .b-caption {
-        padding: 10px;
+        justify-content: center;
     }
 
     .b-caption__address,
@@ -790,6 +804,9 @@ h3 {
 	height: 100%;
 	background-color: #FEDE00;
 	opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
