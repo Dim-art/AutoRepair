@@ -164,21 +164,18 @@ h3 {
 }
 
 /*info-title*/
-/*.b-info__title {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}*/
+.b-info__title {
+    line-height: 50px;
+}
 
 .b-info__title--big {
 	font-size: 50px;
-	font-weight: 400;
-	line-height: 60px;
+	font-weight: 400;	
 }
 
 .b-info__title--middle {
 	font-size: 40px;
 	font-weight: 400;
-	line-height: 50px;
 }
 
 .b-info__title--mid-low {
@@ -193,6 +190,24 @@ h3 {
 	line-height: 23px;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+/*button*/
+.b-info__btn {
+	width: 180px;
+	height: 65px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	background-color: #1A1A1A;
+	border: none;
+}
+
+.b-info__btn:hover {
+	background-color: #FEDE00;
+	transform: scale(1.1,1.1);
+	transition: background-color 0.4s linear, color 0.3s linear;
+	color: #1A1A1A;
 }
 
 @media all and ( min-width: 768px ) and ( max-width: 959px ) {
@@ -218,6 +233,13 @@ h3 {
         font-size: 11px;
         line-height: 15px;
     }
+
+    .b-info__btn {
+        width: 120px;
+        height: 50px;
+        font-size: 13px;
+    }
+    
 }
 
 @media all and ( max-width: 767px ) {
@@ -227,26 +249,8 @@ h3 {
         height: 584px;
     }
 
-
 }
 
-/*button*/
-.b-info__btn {
-	width: 180px;
-	height: 65px;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 18px;
-	background-color: #1A1A1A;
-	border: none;
-}
-
-.b-info__btn:hover {
-	background-color: #FEDE00;
-	transform: scale(1.1,1.1);
-	transition: background-color 0.4s linear, color 0.3s linear;
-	color: #1A1A1A;
-}
 /*___________________________________*/
 
 
@@ -294,7 +298,14 @@ h3 {
 	flex: 1;
 	flex-direction: column;
   	text-align: center;
-	font-size: 1.3em;
+	font-size: 24px;
+}
+
+@media all and ( min-width: 768px ) and ( max-width: 959px ) {
+    
+    .b-nav__items {
+        font-size: 20px;
+    }
 }
 
 .b-nav__items--visible {
@@ -333,7 +344,8 @@ h3 {
 }
 
 @media all and ( min-width: 768px ) {
-	.b-nav {
+	
+    .b-nav {
 		flex-direction: row;
 	}
 
@@ -613,7 +625,9 @@ h3 {
 .b-recall__text {
     flex: 1;
     text-align: center;
-    font-size: 16px;    
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;    
 }
 
 .b-recall__text--bold {
@@ -647,6 +661,19 @@ h3 {
     color: #fff;
     text-align: center; 
     line-height: 20px;
+}
+
+@media all and ( min-width: 768px ) and ( max-width: 959px ) {
+
+    .b-recall__title {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .b-recall__text {
+        font-size: 12px;
+    }
+
 }
 
 /*--line-4_right-section--*/
@@ -687,6 +714,19 @@ h3 {
 	padding-left: 20px;
 	padding-right: 20px;
 	line-height: 1.2;
+}
+
+@media all and ( min-width: 768px ) and ( max-width: 959px ) {
+
+    .b-caption__address,
+    .b-caption__shedule {
+        font-size: 10px;
+    }
+
+    .b-caption__phone {
+        font-size: 22px;
+    }
+
 }
 
 /*footer*/
